@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memberships - Urban Oasis</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo-wrapper container">
+            <div id="logo-cropper">
+                <a href="index.html"><img src="img/logo.jpeg" id="logo" alt="Urban Oasis Logo"></a>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVBAR TOGGLE -->
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="menu-btn"><i class="fa fa-regular fa-bars"></i></label>
+            
+        <!-- NAVBAR -->
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html"><span>URBAN OASIS</span></a></li>
+                <li class="dropdown-nav">
+                    <!-- <a href="#">Shop <i class="fa fa-regular fa-caret-down"></i></a> -->
+
+                    <!-- MOBILE DROPDOWN TOGGLE -->
+                    <input type="checkbox" id="dropdown-toggler">
+                    <label for="dropdown-toggler" id="dropdown-btn">Shop <i class="fa fa-regular fa-caret-down"></i></label>
+
+                    <!-- DROPDOWN -->
+                    <div class="dropdown">
+                        <div class="dropdown-group by-season">
+                            <h3>PRODUCTS BY SEASON</h3>
+                            <ul>
+                                <li class="dropdown-link"><a href="spring-hot-items.html">Spring Hot Items</a></li>
+                                <li class="dropdown-link"><a href="summer-arrivals.html">Summer Arrivals</a></li>
+                                <li class="dropdown-link"><a href="winter-sale.html">Winter Sale</a></li>
+                                <li class="dropdown-link"><a href="limited-edition.html">Limited Edition</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-group by-category">
+                            <h3>PRODUCTS BY CATEGORY</h3>
+                            <ul>
+                                <li class="dropdown-link"><a href="tables-chairs.html">Tables & Chairs</a></li>
+                                <li class="dropdown-link"><a href="storage-shelving.html">Storage & Shelving</a></li>
+                                <li class="dropdown-link"><a href="kitchen-dining-area.html">Kitchen & Dining Area</a></li>
+                                <li class="dropdown-link"><a href="sleeping-area.html">Sleeping Area</a></li>
+                                <li class="dropdown-link"><a href="bathroom.html">Bathroom</a></li>
+                                <li class="dropdown-link"><a href="decor.html">Decor</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-group highlight">
+                            <h3>HIGHLIGHT</h3>
+                            <a href="https://images.unsplash.com/photo-1637580688480-00c8722d8767?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGVyZ29ub21pYyUyMGludGVyaW9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60.html">
+                                <div class="highlight-img">
+                                    <p>Top Ergonomic Furniture 2022</p>
+                                    <img src="img/ergonomic.avif" alt="Top Ergonomic Furniture 2022">
+                                </div>
+                            </a>
+                            <a href="https://i.pinimg.com/564x/48/e1/31/48e131508de4e4e1f6b3bd213fb31e27.jpg">
+                                <div class="highlight-img">
+                                    <p>Space-saving Furniture 2022</p>
+                                    <img src="img/space-saving.jpeg" alt="Space-saving Furniture 2022">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="stores-delivery.html">Stores & Delivery</a></li>
+                <li><a href="memberships.html" class="active">Memberships</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="cart.html"><i class="fa fa-solid fa-cart-arrow-down fa-2x"></i></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="membership" class="signup section-padding section-margin">
+        <h1>Sign Up For Our Membership Programs</h1>
+        <p>Stay updated on our <span>flash offers</span> and get <span>best deals</span> for your favorite products</p>
+        <div class="input-container">
+            <input type="text" placeholder='Your email'>
+            <button><i class="fa fa-solid fa-paper-plane"></i></button>
+        </div>
+    </section>
+
+    <section id="contact-form" class="section-padding section-margin">
+        <h1>Contact Form</h1>
+        
+        <div class="form-container container">
+            <p>You wish to learn more about one of our membership programs? Call us at +12 345 6789 or send a message using the contact form below.</p>
+            <form action="https://webt.l0e.de/tl1" method="POST">
+                <input type="hidden" name="group_number" value="21">
+
+                <label for="firstname">First Name:</label>
+                <input id="firstname" name="firstname" type="text">
+                
+                <label for="lastname">Last Name:</label>
+                <input id="lastname" name="lastname" type="text">
+
+                <label for="title">Title:</label>
+                <select id="title" name="title">
+                    <option value="mr" selected>Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                </select>
+
+                <label for="program">Membership Program:</label>
+                <select id="program" name="program">
+                    <option value="premium" selected>Premium</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                </select>
+                
+                <label for="email">Email Address:</label>
+                <input id="email" name="email" type="text">
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" cols="30" rows="10"></textarea>
+            
+                <input type="submit" value="Send"> 
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section-padding">
+        <div class="col left">
+            <p><span>URBAN OASIS</span> is your go-to brand when it comes to exquisite Furniture for Homes and Offices that combine the best of both worlds: Class and Comfort. Come and transform your everyday space into an Urban Oasis with our professional team - We KNOW furniture!</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><div class="icon"><i class="fa fa-brands fa-facebook-square fa-lg"></i></div></a>
+                <a href="https://www.instagram.com/"><div class="icon"><i class="fa fa-brands fa-instagram fa-lg"></i></div></a>
+                <a href="https://www.pinterest.com/"><div class="icon"><i class="fa fa-brands fa-pinterest-square fa-lg"></i></div></a>
+                <a href="https://www.youtube.com/"><div class="icon"><i class="fa fa-brands fa-youtube fa-lg"></i></div></a>
+            </div>
+            <p><i id="copyright" class="fa fa-regular fa-copyright"></i>2022 URBAN OASIS Ltd.</p>
+        </div>
+        <div class="col center">
+            <h3>Useful links</h3>
+            <div class="link-container">
+                <div class="link-group">
+                    <a href="index.html">Home</a> 
+                    <a href="impressum.html">Impressum</a>
+                    <a href="stores-delivery.html">Stores</a>   
+                    <a href="stores-delivery.html">Delivery</a>   
+                </div> 
+                <div class="link-group">
+                    <a href="cart.html">View Cart</a>
+                    <a href="cart.html">Track Orders</a>  
+                </div>      
+            </div>
+        </div>
+        <div class="col right">
+            <h3>Contact</h3>
+            <p><i class="fa fa-solid fa-map-pin fa-lg"></i>Musterstr. 155, Musterstadt 98336</p>
+            <p><i class="fa fa-solid fa-phone fa-lg"></i>+12 345 6789 (Mon-Sat 09:00 - 18:00)</p>
+            <p><i class="fa fa-solid fa-envelope fa-lg"></i>contact@urban-oasis.com</p>
+            <img src="img/payment-method-icons.png" alt="Payment methods">
+        </div>
+    </footer>
+</body>
+</html>
