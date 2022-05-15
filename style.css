@@ -787,6 +787,10 @@ footer .right i,
     font-size: 30px;
 }
 
+#follow ul li a {
+    text-decoration: none;
+}
+
 #follow i:hover,
 #follow a:hover {
     color: #DCA9D3;
