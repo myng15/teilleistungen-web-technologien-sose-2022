@@ -766,6 +766,7 @@ footer .right i,
     border: none;
     background-color: #595764;
     color: white;
+    cursor: pointer;
 }
 
 .signup i,
@@ -846,6 +847,7 @@ footer .right i,
 
 #contact-form form input:last-child {
     font-weight: 600;
+    cursor: pointer;
 }
 
 .signup input:focus,
