@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --main-color: rgb(168,195,190);
+    --bold-color: rgb(0,123,134);
+    --bg-color: rgba(0,123,134, .25);
+    --hover-color: rgba(0,123,134, .5);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    background: white;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin: 10px;
+}
+
+h2 {
+    margin: 10px auto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--bold-color);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+header{
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background: white;
+}
+
+.dropdown-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dropdown-container span {
+    font-weight: bold;
+    color: var(--bold-color);
+}
+
+select, #load-btn {
+    padding: 10px;
+    margin: 15px 20px 15px 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: black;
+    background: var(--bg-color);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.article-container {
+    padding: 10px 20px;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-items: center;
+}
+
+#article-category {
+    margin-top: 130px;
+    width: 80%;
+    color: var(--bold-color);
+}
+
+#articles {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-items: center;
+    width: 80%;
+}
+
+.article-container article {
+    list-style: none;
+    width: 100%;
+    height: auto;
+    transition: 0.5s all;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.03);
+    border: 1px solid rgba(222, 206, 219, 0.5);
+    padding: 15px;
+    margin: 10px;
+    position: relative;
+}
+
+.date-time span,
+.article-tag {
+    color: gray;
+    font-size: 14px;
+}
+
+.load-spinner img{
+    width: 40px;
+    margin: 10px;
+}
+
+.message {
+    color: gray;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+    
+    .dropdown-container {
+       width: 100%;
+       justify-content: center;
+    }
+
+    .article-container {
+        padding: 5px 10px;
+    }
+
+    #article-category, #articles {
+        width: 90%;
+    }
+    
+}
