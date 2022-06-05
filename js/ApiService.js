@@ -51,7 +51,6 @@ export default class ApiService {
         let sortedArr = [];
         
         if (criterion === 'time' | criterion === 'default') {
-            // Sort by time (suffices for the assignment):
             sortedArr = data.sort((a, b) => {
                 let timeA = a.time;
                 let timeB = b.time;
