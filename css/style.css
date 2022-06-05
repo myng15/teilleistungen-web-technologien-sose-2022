@@ -18,7 +18,7 @@ main{
 }
 
 h1 {
-    margin: 10px;
+    margin: 5px 0px;
 }
 
 h2 {
@@ -46,6 +46,7 @@ header{
     box-shadow: 5px 10px 15px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 100;
@@ -65,9 +66,13 @@ header{
     color: var(--bold-color);
 }
 
+#filter-dropdown, #sort-dropdown {
+    margin: 15px 0 15px 5px;
+    padding: 10px;
+}
+
 select, #load-btn {
     padding: 10px;
-    margin: 15px 20px 15px 5px;
     border: none;
     outline: none;
     font-weight: bold;
@@ -77,6 +82,10 @@ select, #load-btn {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+#load-btn {
+    margin: 10px;
 }
 
 .article-container {
@@ -89,7 +98,7 @@ select, #load-btn {
 }
 
 #article-category {
-    margin-top: 130px;
+    margin-top: 150px;
     width: 80%;
     color: var(--bold-color);
 }
@@ -134,16 +143,22 @@ select, #load-btn {
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
-    
-    .dropdown-container {
-       width: 100%;
-       justify-content: center;
+
+    h1 span:nth-child(2){
+        font-size: 26px;
     }
 
     .article-container {
         padding: 5px 10px;
+    }
+
+    #article-category {
+        margin-top: 190px;
     }
 
     #article-category, #articles {
