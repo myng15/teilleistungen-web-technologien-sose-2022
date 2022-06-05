@@ -67,7 +67,7 @@ header{
 }
 
 #filter-dropdown, #sort-dropdown {
-    margin: 15px 0 15px 5px;
+    margin: 15px 0;
     padding: 10px;
 }
 
