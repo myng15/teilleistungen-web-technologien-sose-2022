@@ -9,7 +9,7 @@ if(response.status >=200 && response.status < 300) { //success \
     this.tagData = responseData.content;\
 } else { //error \
     console.log(response.status, response.statusText);\
-    this.tagData = ["No category found"];\ 
+    this.tagData = ["No category found"]; 
 }
 
 Ich behalte dennoch das aktuelle Errorhandling bei, weil es nicht immer einen Statuscode gibt. Das aktuelle Errorhandling ist allgemeiner und funktioniert in Ordnung u.a. im Falle, dass die angeforderten Artikeln nicht zur Verfügung stehen. 
