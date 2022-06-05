@@ -134,6 +134,13 @@ class LoadMoreService {
         div.appendChild(img);
         $articles.appendChild(div);
     }
+
+    setSortToDefault() {
+        let nrOfDisplayedArticles = Array.from($articles.querySelectorAll("article")).length;
+        if ($sortSelect.selectedOptions[0].value && (articles.length - nrOfDisplayedArticles > 0)) {
+            $sortSelect.value = "";
+        }
+    };
 }
 
 
@@ -179,6 +186,7 @@ $sortSelect.addEventListener('change', () => headlineSortService.sortAndDisplayA
 $loadBtn.addEventListener('click', () => {
     headlineLoadMoreService.loadMore();
     setTimeout(headlineLoadMoreService.displayMoreArticles, 600);
+    headlineLoadMoreService.setSortToDefault();
 })
 
 
