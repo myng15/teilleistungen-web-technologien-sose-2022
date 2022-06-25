@@ -1,18 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="./js/index.js" defer></script>
-  <title>Frontend</title>
+  <title>Modulübersicht</title>
 </head>
 <body>
-  <div class="container">
+  <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+      <div class="container">
+      <a href="#" class="navbar-brand mb-0 d-flex align-items-center">
+        <img src="img/favicon.ico" alt="Website Logo" class="d-inline-block" width="50"  height="50"> 
+        <span class="h3 px-1 text-light">Modulübersicht</span> 
+      </a>
+      <button type="button" 
+              data-bs-toggle="collapse" data-bs-target="#siteNavbar" 
+              class="navbar-toggler" 
+              aria-controls="siteNavbar" aria-expanded="false" aria-label="Toggle navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-light" id="siteNavbar">
+        <button type="button" id="diagram-btn" class="btn btn-light"><strong>Diagramm</strong></button>
+        <button type="button" id="impressum-btn" class="btn btn-light mx-2"><strong>Impressum</strong></button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="container" id="main-container">
+     
+    </div>
+  </main>
 
-  </div>
 </body>
 </html>
