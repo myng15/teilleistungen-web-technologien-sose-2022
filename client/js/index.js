@@ -103,5 +103,46 @@ class DiagramService {
 
 const diagramService = new DiagramService();
 window.onload = function() {
+  toggleBtn($diagramBtn, $impressumBtn);
   diagramService.showDiagram();
 }
+
+function toggleBtn(btnOff, btnOn) {
+  // Turn on btnOff
+  if (btnOff.classList.contains('btn-light')) {
+    btnOff.classList.remove('btn-light');
+    btnOff.classList.add('btn-warning');
+  }
+  // Turn off btnOn
+  if (btnOn.classList.contains('btn-warning')){
+    btnOn.classList.remove('btn-warning');
+    btnOn.classList.add('btn-light');
+  }
+}
+
+$diagramBtn.addEventListener('click', () => {
+  toggleBtn($diagramBtn, $impressumBtn);
+  diagramService.showDiagram();
+})
+
+$impressumBtn.addEventListener('click', () => {
+  toggleBtn($impressumBtn, $diagramBtn);
+  $mainContainer.innerHTML = ` 
+    <section id="impressum" class="container">
+      <h1>Impressum</h1>
+
+      <h3>Herausgeber</h3>
+      <p>My Nguyen</p>
+      
+      <h3>Kontakt</h3>
+      <p>contact@uni-bamberg.com</p>
+      
+      <h3>Disclaimer</h3>
+      <h5 class="text-secondary">Nach Vorlage der Universität Bamberg</h5>
+      <p>Die Zusammenstellung der Informationen auf dieser Website wurde von My Nguyen mit größtmöglicher Sorgfalt vorgenommen. Dennoch kann keinerlei Gewähr für Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen und Daten übernommen werden. Haftungsansprüche gegen My Nguyen oder die Autoren beziehungsweise Verantwortlichen dieser Website für Schäden materieller oder immaterieller Art, die auf gegebenenfalls fehlerhaften oder unvollständigen Informationen und Daten beruhen, sind, soweit nicht Vorsatz oder grobe Fahrlässigkeit vorliegt, ausgeschlossen.</p>
+
+      <p>Vorgesagte gilt auch für Informationen auf Websites, auf die mittels eines Hyperlinks verwiesen wird. Der Inhalt dieser Websites liegt vollständig außerhalb des Verantwortungsbereiches von My Nguyen, war aber zur Zeit der Verlinkung frei von illegalen Inhalten. Auf die Gestaltung der gelinkten Websites kann nicht Einfluss genommen werden. Für Schäden, die aus fehlerhaften oder unvollständigen Inhalten auf den mittels Link verwiesenen Websites resultieren, haften My Nguyen und die Autoren beziehungsweise Verantwortlichen dieser Website nicht.</p>
+        
+      <p>Alle auf dieser Website veröffentlichten Texte, Bilder und Grafiken unterliegen dem Urheberrecht und anderen Gesetzen zum Schutz des geistigen Eigentums. Das Copyright für die von My Nguyen erstellten Objekte der Website liegt bei My Nguyen. Auf der Website genannte und gegebenenfalls durch Dritte geschützte Marken- und Warenzeichen unterliegen ohne Einschränkung den Bestimmungen des jeweils geltenden Kennzeichenrechts und den Besitzrechten der jeweils eingetragenen Eigentümer.</p>
+    </section>`;
+})
