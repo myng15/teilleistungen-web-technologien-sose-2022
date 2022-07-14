@@ -5,10 +5,7 @@
 	import CardContainer from "./components/CardContainer.svelte"
 	import Settings from "./components/Settings.svelte";
 	
-	
-	
 </script>
-
 
 <style>
 	main {
