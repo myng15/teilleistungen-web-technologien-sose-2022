@@ -14,19 +14,10 @@
 </script>
 
 <div class="d-flex flex-row flex-wrap justify-content-center align-items-center" id="card-container">
-    <!-- {#await allPlacesData} 
-    <p>Loading...</p>
-    {:then allPlacesData}  -->
     {#each allPlacesData as place, i}
     <!-- <p>{JSON.stringify(data, null, 2)}</p> --> 
     <Card id={i} placeName={place.placeName} state={place.state} index={place.index}/>
     {/each}
-    <!-- {:else}
-    <p>loading</p>
-    {/each}
-    {:catch error}
-    <div>{error.message}</div>
-    {/await} -->
 </div>
 
 <style>
