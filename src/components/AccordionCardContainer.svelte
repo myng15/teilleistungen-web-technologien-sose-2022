@@ -4,7 +4,7 @@
 </script>
 
 <div class="accordion" id="accordian-card-container">
-    <div class="accordion-item" id={"state-"+i}>
+    <div class="accordion-item m-2" id={"state-"+i}>
       <h2 class="accordion-header" id={"heading-"+i}>
         {#if i === 0}
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={"#collapse-"+i} aria-expanded="true" aria-controls={"collapse-"+i}>
