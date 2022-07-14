@@ -1,5 +1,5 @@
 <script>
-    import { selectedSorting } from "../stores"
+    import { selectedSorting } from "../stores.js"
 </script>
 
 <span>Sortierung:</span>

@@ -1,5 +1,5 @@
 <script>
-    export let placeName, state, index, id;
+    export let placeName, index, id;
 </script>
 
 {#if index === 1}

@@ -1,5 +1,5 @@
 <script>
-    import { selectedGrouping } from "../stores"
+    import { selectedGrouping } from "../stores.js"
 </script>
 <span>Groupierung:</span>
 <div class="form-check">

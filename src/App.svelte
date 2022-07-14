@@ -4,7 +4,7 @@
 	import Navbar from "./components/Navbar.svelte"
 	import CardContainer from "./components/CardContainer.svelte"
 	import Settings from "./components/Settings.svelte";
-
+	
 	let data;
     onMount(async () => {
         const responseData = await fetch("https://tl4.l0e.de/", { mode: "cors" })
