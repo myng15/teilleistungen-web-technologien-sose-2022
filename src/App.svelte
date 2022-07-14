@@ -7,6 +7,21 @@
 	
 </script>
 
+<Router>
+    <Navbar/>
+    <main class="container">
+        <Route>
+            <CardContainer/>
+        </Route>
+        <Route path="overview">
+            <CardContainer/>
+        </Route>
+        <Route path="settings">
+            <Settings/>
+        </Route>
+    </main>
+</Router>
+
 <style>
 	main {
 		text-align: left;
