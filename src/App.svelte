@@ -14,6 +14,20 @@
     });
 </script>
 
+<Router>
+    <Navbar/>
+    <main class="container">
+        <Route>
+            <CardContainer {data}/>
+        </Route>
+        <Route path="overview">
+            <CardContainer {data}/>
+        </Route>
+        <Route path="settings">
+            <Settings/>
+        </Route>
+    </main>
+</Router>
 
 <style>
 	main {
