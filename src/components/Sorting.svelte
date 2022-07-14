@@ -1,13 +1,17 @@
+<script>
+    import { selectedSorting } from "../stores"
+</script>
+
 <span>Sortierung:</span>
 <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-    <label class="form-check-label" for="flexRadioDefault1">
+    <input class="form-check-input" type="radio" id="sort-name-radio" value="name" bind:group={$selectedSorting} checked>
+    <label class="form-check-label" for="sort-name-radio">
       Nach Name
     </label>
   </div>
   <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-    <label class="form-check-label" for="flexRadioDefault2">
+    <input class="form-check-input" type="radio" id="sort-index-radio" value="index" bind:group={$selectedSorting}>
+    <label class="form-check-label" for="sort-index-radio">
       Nach Index
     </label>
   </div>
