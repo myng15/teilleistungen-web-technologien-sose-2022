@@ -1,12 +1,12 @@
 <script>
     import { Router, Link } from "svelte-navigator";
-    let current = 0;
+    let current = 1;
 </script>
 
 <Router>
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="navbar-brand m-3"><h3>Waldbrand-Vorhersage</h3></div>
+            <Link class="navbar-brand m-3" to=""><h3>Waldbrand-Vorhersage</h3></Link>
             <div class="collapse navbar-collapse" id="navbarNav"> 
                 <ul class="navbar-nav">
                     <li class="nav-item">

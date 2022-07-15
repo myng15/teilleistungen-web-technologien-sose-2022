@@ -17,11 +17,13 @@
 
     let allPlacesData = [];
     const getAllPlacesData = (data) => {
-        for(const state in data){
-            // for(const place of data[state]){
-            //     allPlacesData = [...allPlacesData, {placeName: Object.keys(place)[0], state: state, index: Object.values(place)[0]}] //Don't use only allPlacesData.push() because in Svelte, DOM only updates on variable assignments
-            // }
-            allPlacesData = allPlacesData.concat(data[state])
+        if(allPlacesData.length === 0){ //prevent data concatenation on every route change
+            for(const state in data){
+                // for(const place of data[state]){
+                //     allPlacesData = [...allPlacesData, {placeName: Object.keys(place)[0], state: state, index: Object.values(place)[0]}] //Don't use only allPlacesData.push() because in Svelte, DOM only updates on variable assignments
+                // }
+                allPlacesData = allPlacesData.concat(data[state])
+            }
         }
         allPlacesData = sortCards(allPlacesData);
     }
@@ -72,7 +74,5 @@
 {/if}
 
 <style>
-/* #card-container {
-   
-} */
+
 </style>
