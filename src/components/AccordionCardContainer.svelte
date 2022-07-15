@@ -8,11 +8,11 @@
       <h2 class="accordion-header" id={"heading-"+i}>
         {#if i === 0}
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={"#collapse-"+i} aria-expanded="true" aria-controls={"collapse-"+i}>
-            {state}
+            <h4>{state}</h4>
         </button>
         {:else}
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={"#collapse-"+i} aria-expanded="false" aria-controls={"collapse-"+i}>
-            {state}
+            <h4>{state}</h4>
         </button>
         {/if}
       </h2>
@@ -28,3 +28,9 @@
       </div>
     </div>
 </div>
+<style>
+  .accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fafad2;
+  }
+</style>
