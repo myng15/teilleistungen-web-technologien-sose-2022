@@ -12,6 +12,7 @@
                                 .then(resData => {return resData.states;});
         data = responseData;
     });
+    
 </script>
 
 <Router>
