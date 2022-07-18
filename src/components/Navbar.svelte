@@ -6,8 +6,10 @@
 <Router>
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
-            <Link class="navbar-brand m-3" to=""><h3>Waldbrand-Vorhersage</h3></Link>
-            <div class="collapse navbar-collapse" id="navbarNav"> 
+            <div on:click="{() => current = 1}">
+                <Link class="navbar-brand m-4" to=""><h3>Waldbrand-Vorhersage</h3></Link>
+            </div>
+            <div class="collapse navbar-collapse mx-3" id="navbarNav"> 
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <div on:click="{() => current = 1}"
@@ -33,7 +35,7 @@
 
 <style>
 nav {
-    height: 100px;
+    height: 90px;
 }
 
 .active {
