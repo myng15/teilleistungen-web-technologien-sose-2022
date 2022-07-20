@@ -20,7 +20,6 @@
         <div class="accordion-body">
             <div class="d-flex flex-row flex-wrap justify-content-center align-items-center card-container">
                 {#each data[state] as place, i}
-                <!-- <p>{JSON.stringify(data, null, 2)}</p> --> 
                 <Card id={i} placeName={Object.keys(place)[0]} index={Object.values(place)[0]}/>
                 {/each}
             </div>
