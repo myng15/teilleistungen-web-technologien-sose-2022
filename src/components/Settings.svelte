@@ -3,7 +3,7 @@
     import Sorting from "./Sorting.svelte"
 </script>
 
-<div class="" id="settings-container">
+<div id="settings-container">
     <Grouping/>
     <Sorting/>
 </div>
